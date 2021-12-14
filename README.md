@@ -205,7 +205,8 @@ Pre-requisites (likely already in your system!):
     * Activate `VTK_Group_Qt`, `vtkGUISupportQtOpenGL`, `vtkImagingOpenGL2`
     * Set the `Qt5_DIR` variable to where Qt is installed, for example `$HOME/local/Qt/5.12.1/gcc_64/lib/cmake/Qt5`
     * `CMAKE_CXX_FLAGS` set to `-std=c++14 -fPIC`
-    * `VTK_MODULE_ENABLE_VTK_libxml2` set to `NO`
+    * `VTK_MODULE_ENABLE_VTK_libxml2` set to `NO` (it might be a different tag which is dependent on the VTK version)
+    * `X11_SM_LIB` set to `/usr/lib/x86_64-linux-gnu/libSM.so;-luuid`
     * Use system hdf5, and set each HDF5-related folder to the subfolders of the HDF5 installation i.e. `$HOME/local/hdf5/...`.
     * Configure and generate in your CMake-gui, then go to the build folder and in a terminal do `make`.
 
